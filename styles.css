@@ -167,15 +167,16 @@ main section{
 }
 
 
-.page02{
-    min-height: 100vh;
-    padding: 100px 40px 40px;
-    box-sizing: border-box;
+  .page02 {
+    min-height: auto;
+    height: auto;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    padding: 50px 20px 40px;
+
+    justify-content: flex-start;
+    gap: 40px;
 }
+
     
 h1 span{
  color:#6b1966;
@@ -189,10 +190,7 @@ h1 span{
     
 }
 
-.page02{
-    min-height: 100vh;
-   
-}
+
 main div h2{
     font-family: "Share Tech", cursive;
     margin-top: 2px;
@@ -381,4 +379,188 @@ header h3:hover{
 
 html {
     scroll-behavior: smooth;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    header {
+        padding: 10px 15px;
+    }
+
+    header h3 {
+        font-size: 1rem;
+    }
+
+    header nav {
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 0.85rem;
+    }
+
+
+    /* HERO */
+
+    main.hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+
+        height: auto;
+        min-height: 0;
+
+        padding: 100px 20px 40px;
+    }
+
+    .profile-pic img {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    main.hero section {
+        top: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    main div h2 {
+        font-size: 1rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    .quote {
+        font-size: 1.8rem;
+        margin: 15px 0;
+    }
+
+    button {
+        margin: 10px 5px;
+        padding: 12px 16px;
+    }
+
+
+    /* SKILLS + CONTACT PAGE */
+
+    .page02 {
+        min-height: 0;
+        height: auto;
+
+        padding: 40px 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+
+    /* SKILLS */
+
+    .tool-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .tool-card h3 {
+        margin-left: 15px;
+    }
+
+    .tool-card p {
+        margin-left: 15px;
+    }
+
+    .exploring {
+        margin-left: 15px;
+    }
+
+
+    /* LET'S CONNECT */
+
+    .connect {
+        width: 100%;
+        text-align: center;
+
+        opacity: 1;
+        transform: none;
+
+        padding: 20px 10px;
+    }
+
+    .connect h2 {
+        margin: 10px 0;
+    }
+
+    .social-links {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .social-links a {
+        font-size: 0.8rem;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding-bottom: 20px;
+    }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+    header h3 {
+        font-size: 0.85rem;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    header nav a {
+        font-size: 0.7rem;
+    }
+
+    .profile-pic img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+    }
+
+
+
+    /* ...your existing mobile rules stay exactly the same... */
+
+    .hidden {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+
 }
