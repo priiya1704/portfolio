@@ -1,0 +1,384 @@
+body{
+    margin:0;
+    background:
+    radial-gradient(circle at top left,
+        #4d4d4d 0%,
+        #2d2d2d 35%,
+        #151515 75%,
+        #080808 100%);
+    
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.156) 1px, transparent 1px);
+    background-size:24px 24px;
+    pointer-events:none;
+}
+
+
+
+    header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+    background: white;
+    
+
+    z-index: 100;
+    box-sizing: border-box;
+    
+}
+
+
+
+header h3{
+    font-family: "Unica One", cursive;
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+header nav a{
+    font-family: "Unica One", cursive;
+    text-decoration: none;
+    color: #f9f7f7;
+}
+
+header{
+    background-color: #424141;
+}
+
+button{
+    background:white;
+    color:#111;
+    border:none;
+    transition:.3s;
+    font-family: "Barriecito", cursive;
+    font-size: 1rem;
+    font-weight: 350;
+    color: rgb(6, 7, 7);
+    padding: 15px 20px;
+    border-radius: 14px;
+    border: black;
+    cursor: pointer;
+    margin: 20px;
+
+}
+
+a{
+    color: rgb(3, 14, 36);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    
+}
+
+button:hover{
+    background:#111;
+    color:white;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+
+    main{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0;
+    padding: 0 15px;
+    color:#d6d6d6;
+}
+    
+
+
+img{
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    margin: 5px 20px;
+    flex-shrink: 0;
+    border-radius:50%;
+   box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.55),
+    0 0 18px rgba(150, 150, 150, 0.08);
+
+    transition: transform .4s ease,
+                box-shadow .4s ease;
+}
+
+img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 25px 60px rgba(0,0,0,.45);
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+
+    h1{
+    font-family: "Major Mono Display", cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 140px;
+    color:#ffffff;
+}
+
+main section{
+    position: relative;
+    top: 30px;   /* Adjust this value */
+
+}
+
+
+.page02{
+    min-height: 100vh;
+    padding: 100px 40px 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+    
+h1 span{
+ color:#6b1966;
+}
+
+
+
+
+.hero{
+    height: calc(100vh - 84px);
+    
+}
+
+.page02{
+    min-height: 100vh;
+   
+}
+main div h2{
+    font-family: "Share Tech", cursive;
+    margin-top: 2px;
+    font-size: 1.25rem;
+    color: #d6d6d6;
+    max-width: 900px;
+}
+.quote{
+    font-family: "Stalemate", cursive;
+    display: block;
+    color: #fffbfb;
+ 
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin: 20px;
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        #d69bee,
+        #9c6dce,
+        #6b1865
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 8px rgba(107,25,102,.35);
+
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.quote:hover{
+    filter: brightness(1.1);
+
+    text-shadow:
+        0 0 12px rgba(107,25,102,.45);
+
+    transform: translateY(-2px);
+}
+
+main p{
+    font-family: "Share Tech", cursive;
+    font-size: 1.30rem;
+}
+
+
+.tool-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px 40px;
+    padding: 20px 30px;
+    margin-top: 2px;
+    border-radius: 20px;
+
+   
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+    font-family: "Orbitron", cursive;
+    
+}
+.tool-card:hover{
+    transform: translateY(-8px);
+    background: #3a3a3a;
+    box-shadow: 0 18px 35px rgba(0,0,0,.45);
+    border-radius: 20px;
+
+
+}
+.tool-card h3{
+    transition: transform .3s ease,
+                background .3s ease,
+                box-shadow .3s ease,
+                letter-spacing .3s ease;
+    padding: 8px 0;
+    margin-left: 30px;
+    margin-top: 2px;
+
+}
+
+.tool-card:hover h3{
+    letter-spacing: 2px;
+}
+
+.tool-card p{
+     font-family: "JetBrains Mono", monospace;
+     color: #898686;
+     margin-left: 30px;
+    }
+
+.page02 h2{
+    font-family: "Xanh Mono", cursive;
+    color: white;
+ background: linear-gradient(
+    135deg,
+    #1a1a1a 0%,
+    #2b2b2b 45%,
+    #342634 70%,
+    #151515 100%
+);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+.page02 h3{
+    color:#cd92c9;
+}
+
+.exploring{
+    grid-column: 1 / -1;
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding-top: 10px;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.tool-card h3{
+    margin-bottom: 6px;
+}
+
+.tool-card p{
+    margin: 0;
+}
+.exploring p{
+    color: #898686;
+}
+
+.content hidden a{
+    column-rule: #898686;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.95rem;
+
+    transition: color .3s ease, letter-spacing .3s ease;
+}
+
+.social-links a:hover{
+    color: #cd92c9;
+    letter-spacing: 2px;
+}
+
+.social-links span{
+    color: #666;
+    user-select: none;
+}
+
+
+footer{
+    margin: 0;
+    text-align: center;
+}
+
+footer p{
+    color: #7f7f7f;
+    font-family: "Unica One", cursive;
+    font-size: 0.8rem;
+}
+
+footer p{
+    transition: color .3s ease;
+}
+
+footer p:hover{
+    color: #cd92c9;
+}
+header h3{
+    color:#d88ed2;
+}
+header h3:hover{
+    color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
