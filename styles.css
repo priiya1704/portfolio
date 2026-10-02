@@ -564,3 +564,66 @@ html {
 
 
 }
+
+
+
+.design-section {
+    padding: 150px 8% 80px;
+    text-align: center;
+}
+
+.design-section h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.design-section p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/*PROJECT BOX*/
+
+.design-project {
+    width: 85%;
+    margin: 40px auto;
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.project-info {
+    width: 40%;
+}
+
+.project-number {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.project-info h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.project-info p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.project-type {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
